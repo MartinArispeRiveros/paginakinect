@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Kinect</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+  <div id="nav">
+    <ul class="contenedor">
+      <li><a id="aInicio" href="#inicio">Inicio</a></li>
+      <li><a id="Contenido" href="#contenido">Contenido</a></li>
+      <li><a id="aFotos" href="#fotos">Fotos</a></li>
+      <li><a id="aContactos" href="#contactos">Contactos</a></li>
+    </ul>
+  </div>
+  <div id="inicio" class="seccion fondoBlanco">
+    <div class="contenedor">
+      <div class="columna8">
+        <h1>Kinect for Windows</h1>
+        <p>Sensor de captura de movimiento para el desarrollo de aplicaciones
+           para plataformas microsoft.</p>
+      </div>
+      <div class="columna4">
+        <img class="redondo" src="/images/vision.png" alt="" width="200" height="200">
+      </div>
+    </div>
+  </div>
+  <div id="contenido" class="seccion fondoGris">
+    <div class="contenedor">
+      <p>Mercury nació en el Shangani Govt. Hospital, de la isla de Zanzíbar, entonces un protectorado británico y actualmente parte de Tanzania, distante 25 kilómetros de la costa de Tanganica, el 5 de septiembre de 1946. Sus padres, Bomi y Jer Bulsara,15 nota 1 eran parsis de la región de Gujarat, parte de la Presidencia de Bombay en la India Británica.15 Tuvo que trasladarse a África a causa del trabajo de su padre, cajero de la Secretaría de Estado para las Colonias;16 El apellido de la familia se deriva de la ciudad de Bulsar (conocida también como Valsad), en el sur de Guyarat (India). Siendo parsis, Mercury y su familia practicaban la religión zoroástrica y estaban orgullosos de su ascendencia persa.17 La familia Bulsara se había mudado a Zanzíbar debido a una orden recibida por su padre en su trabajo en la Oficina Colonial Británica (como Tesorero del Tribunal Supremo (Korti Kuu) de Zanzíbar). Mercury tenía una hermana menor, Kashmira Cooke.</p>
+    </div>
+  </div>
+  <div id="fotos" class="seccion fondoGrisOscuro">
+    <div class="contenedor">
+      <div class="columna4">
+        <div class="box">
+          <img src="/images/1.jpg" alt="" width="300" height="300"> 
+          <h2>1</h2>
+        </div>
+      </div>
+      <div class="columna4">
+        <div class="box">
+          <img src="/images/2.jpg" alt="" width="300" height="300"> 
+          <h2>1</h2>
+        </div>
+      </div>
+      <div class="columna4">
+        <div class="box">
+          <img src="/images/3.jpg" alt="" width="300" height="300"> 
+          <h2>2</h2>
+        </div>
+      </div>
+      <div class="columna4">
+        <div class="box">
+          <img src="/images/4.jpg" alt="" width="300" height="300"> 
+          <h2>3</h2>
+        </div>
+      </div>
+      <div class="columna4">
+        <div class="box">
+          <img src="/images/5.jpg" alt="" width="300" height="300"> 
+          <h2>4</h2>
+        </div>
+      </div>
+      <div class="columna4">
+        <div class="box">
+          <img src="/images/6.jpg" alt="" width="300" height="300"> 
+          <h2>5</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contactos" class="seccion fondoGris">
+    <div class="contenedor">
+      <p>Aqui viene todo lo que es direcciones de correo electronico, etc,etc</p>
+      <img src="/images/facebook.png">
+    </div>
+  </div>
+  <div id="copyright">
+      <font color="black"> Kinect Copyright @2014</font>
+    </div>
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+  $(function(){
+  $('#nav #aInicio').hover(function (e) {
+    $('html,body').stop().animate({
+      scrollTop: '0px'
+    }, 1000);
+    e.preventDefault();
+  });
+
+  $('#nav #Contenido').hover(function (e) {
+    var contenido = $('#contenido');
+    $('html,body').stop().animate({
+      scrollTop: contenido.offset().top
+    }, 1000);
+    e.preventDefault();
+  });
+
+  $('#nav #aFotos').hover(function (e) {
+    var fotos = $('#fotos');
+    $('html,body').stop().animate({
+      scrollTop: fotos.offset().top
+    }, 1000);
+    e.preventDefault();
+  });
+   $('#nav #aContactos').hover(function (e) {
+    var contactos = $('#contactos');
+    $('html,body').stop().animate({
+      scrollTop: contactos.offset().top
+    }, 1000);
+    e.preventDefault();
+  });
+});
+</script>
